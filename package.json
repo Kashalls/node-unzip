@@ -1,39 +1,33 @@
 {
   "name": "unzip",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Unzip cross-platform streaming API compatible with fstream and fs.ReadStream",
   "author": "Evan Oxfeld <eoxfeld@gmail.com>",
   "maintainers": [
-    {
-      "name": "Evan Oxfeld",
-      "email": "eoxfeld@gmail.com"
-    },
-    {
-      "name": "Joe Ferner",
-      "email": "joe.ferner@nearinfinity.com"
-    }
+    "Evan Oxfeld <eoxfeld@gmail.com>",
+    "Joe Ferner <joe.ferner@nearinfinity.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/EvanOxfeld/node-unzip.git"
+    "url": "git+https://github.com/EvanOxfeld/node-unzip.git"
   },
   "license": "MIT",
   "dependencies": {
-    "fstream": ">= 0.1.30 < 1",
-    "pullstream": ">= 0.4.1 < 1",
     "binary": ">= 0.3.0 < 1",
-    "readable-stream": "~1.0.31",
-    "setimmediate": ">= 1.0.1 < 2",
-    "match-stream": ">= 0.0.2 < 1"
+    "fstream": "^1.0.12",
+    "match-stream": ">= 0.0.2 < 1",
+    "pullstream": "^1.0.0",
+    "readable-stream": "^3.6.0",
+    "setimmediate": ">= 1.0.1 < 2"
   },
   "devDependencies": {
-    "tap": ">= 0.3.0 < 1",
-    "temp": ">= 0.4.0 < 1",
     "dirdiff": ">= 0.0.1 < 1",
-    "stream-buffers": ">= 0.2.5 < 1"
+    "stream-buffers": "^3.0.2",
+    "tap": "^14.10.7",
+    "temp": ">= 0.4.0 < 1"
   },
   "directories": {
-    "example": "examples",
+    "lib": "lib",
     "test": "test"
   },
   "keywords": [
@@ -48,5 +42,9 @@
   "main": "unzip.js",
   "scripts": {
     "test": "tap ./test/*.js"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/EvanOxfeld/node-unzip/issues"
+  },
+  "homepage": "https://github.com/EvanOxfeld/node-unzip#readme"
 }
